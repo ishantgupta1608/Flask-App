@@ -8,7 +8,8 @@ app = Flask(__name__)
 def index():
     file = open('Timestamp.txt', 'a')
     file.write(str(datetime.now()) + '\n')
-    return "Hello World!!!!!"
+    file.close()
+    return open('Timestamp.txt', 'r').read()
 
 
 if __name__ == "__main__":
