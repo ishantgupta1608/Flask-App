@@ -13,4 +13,4 @@ def index():
 
 if __name__ == "__main__":
     #print(2)
-    app.run()
+    app.run(debug = True)
