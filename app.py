@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    file = open('Timestamp.txt', 'a')
-    file.write(str(datetime.now()) + '\n')
+    #file = open('Timestamp.txt', 'a')
+    #file.write(str(datetime.now()) + '\n')
     return "Hello World!!!!!"
 
 
