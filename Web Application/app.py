@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     file = open('Timestamp.txt', 'a')
-    file.write(str(datetime.now()) + '\n')
+    file.write(str(datetime.now()) +':' +  '\n')
     file.close()
     return open('Timestamp.txt', 'r').read()
 
